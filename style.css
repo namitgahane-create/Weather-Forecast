@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #1f4037, #99f2c8);
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+    text-align: center;
+    color: #222;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+button {
+    padding: 10px 15px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    background: #ffffff;
+    color: #333;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: #333;
+    color: #fff;
+}
+
+.loading {
+    margin: 10px 0;
+}
+
+.result h2 {
+    margin: 15px 0 5px;
+    font-size: 26px;
+}
+
+.result img {
+    width: 90px;
+}
+
+.result p {
+    margin: 5px 0;
+    font-size: 15px;
+}
+
+.forecast {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+
+.forecast-card {
+    background: rgba(255, 255, 255, 0.25);
+    padding: 15px 10px;
+    border-radius: 20px;
+    width: 80px;
+    min-height: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    backdrop-filter: blur(6px);
+    transition: 0.3s ease;
+    overflow: hidden;
+}
+
+.forecast-card:hover {
+    transform: translateY(-6px);
+}
+
+.forecast-card p {
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+#history {
+    margin: 15px 0;
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.history-item {
+    background: rgba(255,255,255,0.3);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.history-item:hover {
+    background: white;
+    color: black;
+}
+
+.suggestions {
+    background: rgba(255,255,255,0.2);
+    border-radius: 10px;
+    margin-top: 5px;
+    overflow: hidden;
+}
+
+.suggestions div {
+    padding: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.suggestions div:hover {
+    background: rgba(255,255,255,0.4);
+}
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+        align-items: flex-start;
+    }
+    .container {
+        width: 100%;
+        max-width: 420px;
+        padding: 20px;
+    }
+    h1 {
+        font-size: 22px;
+    }
+    .search-box {
+        flex-direction: column;
+        gap: 8px;
+    }
+    input {
+        width: 100%;
+    }
+    button {
+        width: 100%;
+    }
+    .forecast {
+        justify-content: center;
+    }
+    .forecast-card {
+        width: 80px;
+        margin-bottom: 10px;
+    }
+    .result img {
+        width: 70px;
+    }
+}
+
+
+.forecast-icon {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+h1, h2, h3 {
+    color: #111;
+}
+
+.result p {
+    color: #333;
+}
+
+
