@@ -49,6 +49,6 @@ This app fetches real-time weather data using the OpenWeather API.
 
 ## 👨‍💻 Author
 
-Namit Gahane  
+Namit Pramod Gahane  
 B-TECH. Computer Engineering Student  
 
